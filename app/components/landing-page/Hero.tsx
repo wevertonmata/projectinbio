@@ -1,10 +1,11 @@
+import TotalVisits from "../commons/total-visists";
 import UserCard from "../commons/user-card";
 import {Button, TextInput} from "../ui";
 
 export default function Hero() { 
     return (
-        <div className="flex border h-screen">
-            <div className="w-full flex flex-col gap-2 mt-[35vh] border">
+        <div className="flex h-screen">
+            <div className="w-full flex flex-col gap-2 mt-[35vh] ">
                 <h1 className="text-5xl font-bold text-white leading-[64px]">
                     Seus projetos e redes sociais em um único link
                 </h1>
@@ -23,7 +24,7 @@ export default function Hero() {
                 <div className=" relative ">
                     <UserCard/>
                     <div className="absolute -bottom-[7%] -right-[45%]"> 
-                        {/* <TotalVisits/> */}
+                        <TotalVisits/>
                     </div>
                     <div className="absolute -top-[20%] -left-[45%] -z-10"> 
                         {/* <ProjectCard/> */}
